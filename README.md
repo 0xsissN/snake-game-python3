@@ -10,7 +10,13 @@ Step 2: Git clone the repository
 git clone https://github.com/0xsissN/snake-game-python3.git
 cd snake-game-python3
 ```
-Step 3: Execute main.py
+Step 3: Change image path
+```
+Line 11 apple.png
+Line 26 snake.png
+Line 78 bground.jpg
+```
+Step 4: Execute main.py
 ```
 python3 main.py
 ```
