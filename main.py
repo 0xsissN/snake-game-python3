@@ -5,6 +5,8 @@ from pygame.locals import *
 
 SIZE = 25
 
+## Here we define the apple.
+## We load the image, configure the size, show the position in which it will appear
 class Apple:
     def __init__(self, parentScreen):
         self.parentScreen = parentScreen
@@ -20,6 +22,8 @@ class Apple:
         self.x = random.randint(1, 39) * SIZE
         self.y = random.randint(1, 31) * SIZE
 
+## Here we define the snake
+## We load the image, load the direction it is taking, show the size and increase the length
 class Snake:
     def __init__(self, parentScreen):
         self.parentScreen = parentScreen
@@ -70,6 +74,9 @@ class Snake:
         self.x.append(-1)
         self.y.append(-1)
 
+## Here we define the game.
+## We configure the background, display size, define the start and end screen messages
+## We define the collision, update the score
 class Game:
     def __init__(self):
         pygame.init()
@@ -176,3 +183,5 @@ class Game:
 if __name__ == '__main__':
     game=Game()
     game.run()
+
+## Do you know who did it?
