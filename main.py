@@ -10,7 +10,7 @@ SIZE = 25
 class Apple:
     def __init__(self, parentScreen):
         self.parentScreen = parentScreen
-        self.image = pygame.image.load("D:/Python/Projects/SnakeGame/Resources/apple.png").convert()
+        self.image = pygame.image.load("/resources/apple.png").convert()
         self.x = SIZE*3
         self.y = SIZE*3
         
@@ -27,7 +27,7 @@ class Apple:
 class Snake:
     def __init__(self, parentScreen):
         self.parentScreen = parentScreen
-        self.image = pygame.image.load("D:/Python/Projects/SnakeGame/Resources/snake.png").convert()
+        self.image = pygame.image.load("/resources/snake.png").convert()
         self.direction = 'right'
         self.length = 1
         self.x = [25]
@@ -82,7 +82,7 @@ class Game:
         pygame.init()
         pygame.display.set_caption("SNAKE GAME")
         self.surface = pygame.display.set_mode((1200, 800))
-        self.background = pygame.image.load("D:/Python/Projects/SnakeGame/Resources/bground.jpg").convert()
+        self.background = pygame.image.load("/resources/background.jpg").convert()
         self.background = pygame.transform.scale(self.background, (self.surface.get_width(), self.surface.get_height())) 
         self.snake = Snake(self.surface)
         self.snake.draw()
