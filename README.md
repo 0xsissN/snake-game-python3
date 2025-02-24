@@ -3,7 +3,7 @@ The Snake Game is a classic arcade game in which the player controls a snake tha
 # Install on windows
 Step 1: Install pygame
 ```
-python3 -m pip install -U pygame --user
+pip install pygame
 ```
 Step 2: Git clone the repository
 ```
