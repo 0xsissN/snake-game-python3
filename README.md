@@ -1,6 +1,6 @@
 # Snake Game
 The Snake Game is a classic arcade game in which the player controls a snake that moves around a screen in search of food. The snake grows every time it eats a piece of food, and if the snake touches its own body or the edges of the screen, the game ends.
-# Install on windows
+# Install
 Step 1: Install pygame
 ```
 pip install pygame
